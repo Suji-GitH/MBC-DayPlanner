@@ -1,0 +1,49 @@
+body {
+  font-family: 'Bellota', cursive;
+  font-size: 16px;
+  background: url(../img/botanical-green.jpg);
+  background-size: cover;
+  height: 100%;
+  
+}
+
+.jumbotron {
+  /* text-align: center; */
+  background-color: transparent;
+  color: tan;
+  border-bottom:  2px solid;
+  border-color: grey;
+
+}
+
+/* Input-group time blocks */
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group-text {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.paddingFix {
+  padding-right: 20px;
+}
+
+.form-control {
+  cursor: pointer;
+}
+
+/* modal style */
+.modal-content {
+  background-color: lightgray;
+}
+
+#taskInput {
+  border-radius: 5px;
+  display: inherit;
+  background-color: dimgray;
+  color: tan;
+  width: 100%;
+}
+

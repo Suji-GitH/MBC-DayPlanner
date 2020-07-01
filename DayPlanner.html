@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+  <!-- Favicon reference -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/Favicon/favicon.ico"/>
+  <!--BootStrap style sheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  <!-- Own style sheet-->
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <!-- header with title, app description, current day, date and year -->
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p id="currentDay" class="lead"></p>
+    <h3 id="headerDate"></h3>
+  </header>
+
+  <!-- Time blocks -->
+  <div class="container">
+    <!-- 9am -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text paddingFix">9am</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea" data-columns="0" data-toggle="tooltip" title="Click to Add Task"></textarea>
+    </div>
+
+    <!-- 10am -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">10am</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea" data-columns="1" data-toggle="tooltip" title="Click to Add Task"></textarea>
+    </div>
+
+    <!-- 11am -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">11am</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea" data-columns="2" data-toggle="tooltip" title="Click to Add Task"></textarea>
+    </div>
+
+    <!-- 12pm -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">12pm</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea" data-columns="3" data-toggle="tooltip" title="Click to Add Task"></textarea>
+    </div>
+
+    <!-- 1pm -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text paddingFix">1pm</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea" data-columns="4" data-toggle="tooltip" title="Click to Add Task"></textarea>
+    </div>
+
+    <!-- 2pm -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text paddingFix">2pm</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea" data-columns="5" data-toggle="tooltip" title="Click to Add Task"></textarea>
+    </div>
+
+    <!-- 3pm -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text paddingFix">3pm</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea" data-columns="6" data-toggle="tooltip" title="Click to Add Task"></textarea>
+    </div>
+
+    <!-- 4pm -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text paddingFix">4pm</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea" data-columns="7" data-toggle="tooltip" title="Click to Add Task"></textarea>
+    </div>
+
+    <!-- 5pm -->
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text paddingFix">5pm</span>
+      </div>
+      <textarea class="form-control" aria-label="With textarea" data-columns="8" data-toggle="tooltip" title="Click to Add Task"></textarea>
+    </div>
+
+  </div>
+
+  <!-- Modal for task Input -->
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Enter Task:<span id="blockId" hidden></span></label>
+            <textarea id="taskInput"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="far fa-window-close"></i> Close</button>
+          <button type="button" id="saveButton" class="btn btn-dark"><i class="far fa-calendar-plus"></i> Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Moment.js script link -->
+  <script src="./assets/lib/moment/moment.with-local.js"></script>
+  <!-- jquery  script link -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap script link -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- Own js script link-->
+  <script src="./assets/javascript/script.js"></script>
+
+</body>
+
+</html>
